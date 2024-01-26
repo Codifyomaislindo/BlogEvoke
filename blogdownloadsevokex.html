@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos na Nuvem</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .options-container {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100%;
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        #executorButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #555;
+            color: white;
+            border: 2px solid #444;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: auto;
+            margin-left: 20px;
+        }
+
+        .game-container {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .game-image {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .download-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            color: #777;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="options-container">
+        <button id="executorButton" onclick="openExecutorLink()">Executor Roblox</button>
+    </div>
+
+    <div class="game-container">
+        <img class="game-image" src="https://t3.gstatic.com/images?q=tbn:ANd9GcR6-ndqK5HKo6WMX_dd-703sEFUXKHZQqEHzpJhTwvsDTKEVA3Ib2vuwrYeA0bNzh0ZsRdB" alt="eFootball Nuvem">
+        <h1>eFootball Nuvem</h1>
+        <button class="download-button" onclick="downloadApk('https://mega.nz/file/FKcEGRyZ#0LmIHrJtxLpDWuFLGWsTteQxTymExH_9J2lagU8n74o')">Download Clique</button>
+    </div>
+
+    <div class="game-container">
+        <img class="game-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzJShqWynuqNF6kASpr8zwMZbqvqIHW2mnWw&usqp=CAU" alt="Roblox Nuvem">
+        <h1>Roblox Nuvem</h1>
+        <button class="download-button" onclick="downloadApk('https://mega.nz/file/VKNWAJoB#mw_ZIbajVcRBVyRD1nNdeRKOEPRdEkYjRCQqxNmiimk')">Download Clique</button>
+    </div>
+
+    <div class="signature">
+        @EvokeX
+    </div>
+
+    <script>
+        function downloadApk(link) {
+            window.location.href = link;
+        }
+
+        function openExecutorLink() {
+            window.open('https://43a63b8d-40c6-488c-91e6-dfad6da6d1c7-00-1ffo8b8dqjx0s.kirk.replit.dev/', '_blank');
+        }
+    </script>
+
+</body>
+</html>
